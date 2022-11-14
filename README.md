@@ -20,3 +20,4 @@ It will also have a leaderboard
 *Show all the Java classes used in the program and their relationships with one another. You can use google’s draw.io to draw the UML diagram. In the UML diagram clearly label each arrowed line with IS-A or HAS-A labels.*
 
 [UML Diagram](https://drive.google.com/file/d/19qYUSJMFpEPtuDP4WAGUdv4B_AoqjmOC/view?usp=sharing)
+![UML diagram](https://user-images.githubusercontent.com/116584585/201716840-1b2a010f-483f-4d53-bf91-a0d8f21126a0.png)
