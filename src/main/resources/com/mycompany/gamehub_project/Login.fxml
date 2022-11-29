@@ -15,7 +15,7 @@
             <Font name="System Bold" size="18.0" />
          </font></Label>
       <Label text="Don't have a account? Click this button to create one!" />
-      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Create an account" />
+      <Button fx:id="CreateButton" onAction="#switchToCreate" text="Create an account" />
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="396.0">
          <children>
             <Label prefHeight="27.0" prefWidth="122.0" text="Username:" wrapText="true">
@@ -36,6 +36,7 @@
             <TextField />
          </children>
       </HBox>
+      <Button fx:id="GameHubButton" mnemonicParsing="false" onAction="#switchToGameHub" text="Sign In" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

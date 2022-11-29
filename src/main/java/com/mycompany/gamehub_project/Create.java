@@ -10,7 +10,7 @@ import javafx.fxml.FXML;
 public class Create {
 
     @FXML
-    private void switchToPrimary() throws IOException {
+    private void switchToLogin() throws IOException {
         App.setRoot("Login");
     }
 }

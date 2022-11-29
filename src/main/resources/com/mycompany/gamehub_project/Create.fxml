@@ -54,7 +54,7 @@
             <TextField />
          </children>
       </HBox>
-        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="All Done!" />
+        <Button fx:id="secondaryButton" onAction="#switchToLogin" text="All Done!" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
