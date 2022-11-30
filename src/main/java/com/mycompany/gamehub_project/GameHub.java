@@ -4,23 +4,36 @@
  */
 package com.mycompany.gamehub_project;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import java.io.IOException;
+import javafx.fxml.FXML;
 
 /**
  * FXML Controller class
  *
  * @author Matthew
  */
-public class GameHub implements Initializable {
+public class GameHub {
 
     /**
      * Initializes the controller class.
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+    @FXML
+    private void switchToTic_Tack_Toe() throws IOException {
+        App.setRoot("Create");
+    }
     
+    @FXML
+    private void switchToHigherOrLower() throws IOException {
+        App.setRoot("Create");
+    }
+    
+    @FXML
+    private void switchToRock_Paper_Scissors() throws IOException {
+        App.setRoot("Create");
+    }
+    
+    @FXML
+    private void switchTo20Questions() throws IOException {
+        App.setRoot("Create");
+    }
 }

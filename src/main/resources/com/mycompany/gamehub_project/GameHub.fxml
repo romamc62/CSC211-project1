@@ -10,39 +10,78 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gamehub_project.GameHub">
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gamehub_project.GameHub">
    <children>
       <VBox layoutX="188.0" layoutY="71.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
+            <Label prefHeight="144.0" prefWidth="600.0" text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
                <font>
-                  <Font size="48.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
-            <GridPane prefHeight="189.0" prefWidth="600.0">
+            <GridPane prefHeight="281.0" prefWidth="624.0">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="600.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="624.0" minWidth="10.0" prefWidth="624.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.79998779296875" minWidth="0.0" prefWidth="0.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="634.0" spacing="20.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Button" />
+                        <Button fx:id="TicTackToeButton" alignment="CENTER" mnemonicParsing="false" onAction="#switchToTic_Tack_Toe" text="Tic-Tack-Toe" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Label prefHeight="70.0" prefWidth="427.0" text="Play on a 3 by 3 Grid! First to line up 3 X's or O's wins!" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
                      <children>
-                        <Button mnemonicParsing="false" text="Button" />
+                        <Button fx:id="HigherOrLowerButton" mnemonicParsing="false" onAction="#switchToHigherOrLower" text="Higher or Lower" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Label prefHeight="68.0" prefWidth="393.0" text="Feeling lucky? Guess to see whether or not the next card drawn is higher or lower than the previous card!" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="2">
                      <children>
-                        <Button mnemonicParsing="false" text="Button" />
+                        <Button fx:id="RockPaperScissorsButton" mnemonicParsing="false" onAction="#switchToRock_Paper_Scissors" prefHeight="51.0" prefWidth="417.0" text="Rock Paper Scissors">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Label prefHeight="67.0" prefWidth="529.0" text="Rock! Paper! Scissors! Guess one of the three to beat the other opponet! (Rock beats scissors, scissors beat papers, paper beats rock)" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="TwentyQuestionsButton" mnemonicParsing="false" onAction="#switchTo20Questions" prefHeight="51.0" prefWidth="208.0" text="20 Questions">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Label prefHeight="63.0" prefWidth="463.0" text="Play with a Friend! Player 1 will give an item, and player 2 will have to guess it in 20 questions!" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                </children>
