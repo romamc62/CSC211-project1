@@ -23,7 +23,7 @@ public class TwentyQuestions {
     
     for(int i=1;i<=20;i++)
     {
-        System.out.println("next question");
+        System.out.println("Question #"+i);
         String Q = scan.nextLine();
         System.out.println("0=yes, 1=no, 2=maybe, 3 = win");
         int res = scan.nextInt();
