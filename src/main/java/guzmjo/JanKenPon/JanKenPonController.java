@@ -33,7 +33,7 @@ public class JanKenPonController {
             
             else if (playerState == PlayerState.PAPER && compState == PlayerState.SCISSOR) {return LOSER;}
             
-            else if (playerState == PlayerState.PAPER && compState == PlayerState.SCISSOR) {return WINNER;}
+            else if (playerState == PlayerState.PAPER && compState == PlayerState.ROCK) {return WINNER;}
             
              else if (playerState == PlayerState.SCISSOR && compState == PlayerState.ROCK) {return LOSER;}
             
