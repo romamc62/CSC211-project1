@@ -44,6 +44,6 @@ public class GameHub {
     
     @FXML
     private void switchTo20Questions() throws IOException {
-        App.setRoot("Create");
+        App.setRoot("TwentyQuestions");
     }
 }
