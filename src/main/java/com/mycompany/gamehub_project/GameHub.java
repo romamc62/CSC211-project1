@@ -6,6 +6,7 @@ package com.mycompany.gamehub_project;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 /**
  * FXML Controller class
@@ -13,6 +14,15 @@ import javafx.fxml.FXML;
  * @author Matthew
  */
 public class GameHub {
+
+    @FXML
+    private Button TicTackToeButton;
+    @FXML
+    private Button HigherOrLowerButton;
+    @FXML
+    private Button RockPaperScissorsButton;
+    @FXML
+    private Button TwentyQuestionsButton;
 
     /**
      * Initializes the controller class.
@@ -24,7 +34,7 @@ public class GameHub {
     
     @FXML
     private void switchToHigherOrLower() throws IOException {
-        App.setRoot("Create");
+        App.setRoot("HigherOrLower");
     }
     
     @FXML
