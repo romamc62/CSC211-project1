@@ -14,7 +14,7 @@
    <children>
       <VBox layoutX="188.0" layoutY="71.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label prefHeight="144.0" prefWidth="600.0" text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
+            <Label fx:id="GameHub_Label" prefHeight="144.0" prefWidth="600.0" text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="36.0" />
                </font>
@@ -37,7 +37,7 @@
                            <font>
                               <Font size="24.0" />
                            </font></Button>
-                        <Label prefHeight="70.0" prefWidth="427.0" text="Play on a 3 by 3 Grid! First to line up 3 X's or O's wins!" textAlignment="CENTER" wrapText="true">
+                        <Label fx:id="TicTackToe_Label" prefHeight="70.0" prefWidth="427.0" text="Play on a 3 by 3 Grid! First to line up 3 X's or O's wins!" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -50,7 +50,7 @@
                            <font>
                               <Font size="24.0" />
                            </font></Button>
-                        <Label prefHeight="68.0" prefWidth="393.0" text="Feeling lucky? Guess to see whether or not the next card drawn is higher or lower than the previous card!" textAlignment="CENTER" wrapText="true">
+                        <Label fx:id="HigherOrLower_Label" prefHeight="68.0" prefWidth="393.0" text="Feeling lucky? Guess to see whether or not the next card drawn is higher or lower than the previous card!" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -63,7 +63,7 @@
                            <font>
                               <Font size="24.0" />
                            </font></Button>
-                        <Label prefHeight="67.0" prefWidth="529.0" text="Rock! Paper! Scissors! Guess one of the three to beat the other opponet! (Rock beats scissors, scissors beat papers, paper beats rock)" textAlignment="CENTER" wrapText="true">
+                        <Label fx:id="RockPaperScissors_Label" prefHeight="67.0" prefWidth="529.0" text="Rock! Paper! Scissors! Guess one of the three to beat the other opponet! (Rock beats scissors, scissors beat papers, paper beats rock)" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -77,7 +77,7 @@
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Label prefHeight="63.0" prefWidth="463.0" text="Play with a Friend! Player 1 will give an item, and player 2 will have to guess it in 20 questions!" textAlignment="CENTER" wrapText="true">
+                        <Label fx:id="TwentyQuestions_Label" prefHeight="63.0" prefWidth="463.0" text="Play with a Friend! Player 1 will give an item, and player 2 will have to guess it in 20 questions!" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="14.0" />
                            </font>

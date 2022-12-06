@@ -24,6 +24,16 @@ public class HigherOrLower {
     private Button BackButton;
     @FXML
     private TextField FirstCardFlip;
+    @FXML
+    private TextField SecondCardFlip;
+    @FXML
+    private TextField HigherOrLowerQuestionBox;
+    @FXML
+    private Button HigherButton;
+    @FXML
+    private Button LowerButton;
+    @FXML
+    private Button Play_Again_Button;
     
     @FXML
     private void switchToGameHub() throws IOException {
@@ -51,6 +61,12 @@ public class HigherOrLower {
 
     @FXML
     private void Start_Button_Clicked(ActionEvent event) {
-        
+        FirstCardFlip.setVisible(true);
+        Play_Again_Button.setVisible(true);
+        LowerButton.setVisible(true);
+        HigherButton.setVisible(true);
+        HigherOrLowerQuestionBox.setVisible(true);
+        SecondCardFlip.setVisible(true);
+        StartButton.setVisible(false);
     }
 }

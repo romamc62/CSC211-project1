@@ -7,6 +7,7 @@ package com.mycompany.gamehub_project;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -23,6 +24,16 @@ public class GameHub {
     private Button RockPaperScissorsButton;
     @FXML
     private Button TwentyQuestionsButton;
+    @FXML
+    private Label GameHub_Label;
+    @FXML
+    private Label TicTackToe_Label;
+    @FXML
+    private Label HigherOrLower_Label;
+    @FXML
+    private Label RockPaperScissors_Label;
+    @FXML
+    private Label TwentyQuestions_Label;
 
     /**
      * Initializes the controller class.
