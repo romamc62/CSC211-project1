@@ -17,24 +17,30 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <TextField fx:id="FirstCardFlip" layoutX="63.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false" />
-      <TextField fx:id="SecondCardFlip" layoutX="389.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false" />
+      <TextField fx:id="FirstCardFlip" alignment="CENTER" layoutX="63.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font></TextField>
+      <TextField fx:id="SecondCardFlip" alignment="CENTER" layoutX="389.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font></TextField>
       <TextField fx:id="HigherOrLowerQuestionBox" alignment="CENTER" editable="false" layoutX="221.0" layoutY="58.0" prefHeight="39.0" prefWidth="157.0" text="Higher or Lower?" visible="false">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Button fx:id="HigherButton" layoutX="248.0" layoutY="127.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="103.0" text="Higher" textAlignment="CENTER" visible="false">
+      <Button fx:id="HigherButton" layoutX="248.0" layoutY="127.0" mnemonicParsing="false" onAction="#Higher_Button_Clicked" prefHeight="58.0" prefWidth="103.0" text="Higher" textAlignment="CENTER" visible="false">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
-      <Button fx:id="LowerButton" layoutX="248.0" layoutY="209.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="103.0" text="Lower" visible="false">
+      <Button fx:id="LowerButton" layoutX="248.0" layoutY="209.0" mnemonicParsing="false" onAction="#Lower_Button_Clicked" prefHeight="58.0" prefWidth="103.0" text="Lower" visible="false">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
-      <Button fx:id="Play_Again_Button" layoutX="238.0" layoutY="306.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="123.0" text="Play Again?" textAlignment="CENTER" visible="false" wrapText="true">
+      <Button fx:id="Play_Again_Button" layoutX="238.0" layoutY="306.0" mnemonicParsing="false" onAction="#Play_Again_Button_Clicked" prefHeight="80.0" prefWidth="123.0" text="Play Again?" textAlignment="CENTER" visible="false" wrapText="true">
          <font>
             <Font size="20.0" />
          </font>

@@ -68,5 +68,41 @@ public class HigherOrLower {
         HigherOrLowerQuestionBox.setVisible(true);
         SecondCardFlip.setVisible(true);
         StartButton.setVisible(false);
+        FirstCardFlip.setText("" + HigherOrLower());
+    }
+
+    @FXML
+    private void Higher_Button_Clicked(ActionEvent event) {
+        SecondCardFlip.setText("" + HigherOrLower());
+        String FirstNumber = FirstCardFlip.getText();
+        String SecNumber = SecondCardFlip.getText();
+        Integer.parseInt(SecNumber);
+        Integer.parseInt(FirstNumber);
+        if (Integer.parseInt(FirstNumber) < Integer.parseInt(SecNumber)) {
+            HigherOrLowerQuestionBox.setText("You Win!");
+        }
+        else {
+            HigherOrLowerQuestionBox.setText("You Lose!");
+        }
+    }
+
+    @FXML
+    private void Lower_Button_Clicked(ActionEvent event) {
+        SecondCardFlip.setText("" + HigherOrLower());
+        String FirstNumber = FirstCardFlip.getText();
+        String SecNumber = SecondCardFlip.getText();
+        Integer.parseInt(SecNumber);
+        Integer.parseInt(FirstNumber);
+        if (Integer.parseInt(FirstNumber) > Integer.parseInt(SecNumber)) {
+            HigherOrLowerQuestionBox.setText("You Win!");
+        }
+        else {
+            HigherOrLowerQuestionBox.setText("You Lose!");
+        }
+    }
+
+    @FXML
+    private void Play_Again_Button_Clicked(ActionEvent event) throws IOException {
+        App.setRoot("HigherOrLower");
     }
 }
