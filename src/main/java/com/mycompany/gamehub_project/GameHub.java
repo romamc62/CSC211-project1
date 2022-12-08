@@ -50,7 +50,7 @@ public class GameHub {
     
     @FXML
     private void switchToRock_Paper_Scissors() throws IOException {
-        App.setRoot("Create");
+        App.setRoot("JanKenPon");
     }
     
     @FXML
