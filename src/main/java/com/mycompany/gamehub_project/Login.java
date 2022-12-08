@@ -34,7 +34,8 @@ public class Login {
     
     @FXML
     private void switchToGameHub() throws IOException {
-        if (User1.getUName.equals(Username_Text_Field.getText()) && User1.getPWRD.equals(Password_Text_Field)) {
+        User User1 = new User();
+        if (User1.getUName().equals(Username_Text_Field.getText()) && User1.getPWRD().equals(Password_Text_Field.getText())) {
             App.setRoot("GameHub");
         }
         else {
