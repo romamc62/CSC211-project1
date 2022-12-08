@@ -14,9 +14,9 @@
    <children>
       <VBox layoutX="188.0" layoutY="71.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="GameHub_Label" prefHeight="144.0" prefWidth="600.0" text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
+            <Label fx:id="GameHub_Label" alignment="CENTER" contentDisplay="CENTER" prefHeight="144.0" prefWidth="628.0" text="Welcome to the GameHub! Please select a game you would like to play!" textAlignment="CENTER" wrapText="true">
                <font>
-                  <Font size="36.0" />
+                  <Font name="System Bold" size="35.0" />
                </font>
             </Label>
             <GridPane prefHeight="281.0" prefWidth="624.0">

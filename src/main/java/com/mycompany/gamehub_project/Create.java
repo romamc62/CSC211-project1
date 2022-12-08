@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
  * @author Matthew
  */
 public class Create {
-
+    
     @FXML
     private Label Create_Instructions;
     @FXML
@@ -35,6 +35,7 @@ public class Create {
 
     @FXML
     private void switchToLogin() throws IOException {
+        User User1 = new User(Name_Text_Field.getText(), DOB_Text_Field.getText(), UserName_Label.getText(), Password_Text_Field.getText());
         App.setRoot("Login");
     }
 }

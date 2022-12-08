@@ -17,11 +17,11 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <TextField fx:id="FirstCardFlip" alignment="CENTER" layoutX="63.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
+      <TextField fx:id="FirstCardFlip" alignment="CENTER" editable="false" layoutX="63.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
          <font>
             <Font size="48.0" />
          </font></TextField>
-      <TextField fx:id="SecondCardFlip" alignment="CENTER" layoutX="389.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
+      <TextField fx:id="SecondCardFlip" alignment="CENTER" editable="false" layoutX="389.0" layoutY="45.0" prefHeight="222.0" prefWidth="149.0" visible="false">
          <font>
             <Font size="48.0" />
          </font></TextField>

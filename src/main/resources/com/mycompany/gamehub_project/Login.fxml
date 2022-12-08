@@ -10,32 +10,33 @@
 
 <VBox alignment="CENTER" prefHeight="413.0" prefWidth="413.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gamehub_project.Login">
    <children>
-      <Label prefHeight="105.0" prefWidth="373.0" text="Hello, and welcome to the GameHub! Please enter your User name and Password" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="Login_Label" prefHeight="105.0" prefWidth="373.0" text="Hello, and welcome to the GameHub! Please enter your User name and Password" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Label>
-      <Label text="Don't have a account? Click this button to create one!" />
+      <Label fx:id="Create_Desc_Label" text="Don't have a account? Click this button to create one!" />
       <Button fx:id="CreateButton" onAction="#switchToCreate" text="Create an account" />
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="396.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="122.0" text="Username:" wrapText="true">
+            <Label fx:id="Username_Label" prefHeight="27.0" prefWidth="122.0" text="Username:" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField />
+            <TextField fx:id="Username_Text_Field" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="393.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="122.0" text="Password:" wrapText="true">
+            <Label fx:id="Password_Label" prefHeight="27.0" prefWidth="122.0" text="Password:" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField />
+            <TextField fx:id="Password_Text_Field" />
          </children>
       </HBox>
+      <Label fx:id="Wrong_Username_Password_Label" text="Wrong Username or Password. Please try again." visible="false" />
       <Button fx:id="GameHubButton" mnemonicParsing="false" onAction="#switchToGameHub" text="Sign In" />
    </children>
    <padding>
