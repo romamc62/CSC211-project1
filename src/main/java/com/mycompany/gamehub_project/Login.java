@@ -31,10 +31,9 @@ public class Login {
     private void switchToCreate() throws IOException {
         App.setRoot("Create");
     }
-    
     @FXML
     private void switchToGameHub() throws IOException {
-        User User1 = new User();
+        User User1 = UserStorage.USI.getUser();
         if (User1.getUName().equals(Username_Text_Field.getText()) && User1.getPWRD().equals(Password_Text_Field.getText())) {
             App.setRoot("GameHub");
         }
