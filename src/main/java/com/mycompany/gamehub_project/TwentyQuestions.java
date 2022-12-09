@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 
 /**
  *
- * @author Matt R
+ * @author mattr
  */
 public class TwentyQuestions {
     @FXML

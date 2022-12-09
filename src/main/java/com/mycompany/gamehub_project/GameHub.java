@@ -40,7 +40,7 @@ public class GameHub {
      */
     @FXML
     private void switchToTic_Tack_Toe() throws IOException {
-        App.setRoot("TicTackToeGame");
+        App.setRoot("sample");
     }
     
     @FXML
