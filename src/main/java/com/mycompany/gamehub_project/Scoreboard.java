@@ -1,4 +1,4 @@
-package guzmjo.JanKenPon;
+package com.mycompany.gamehub_project;
 
 
 import java.io.IOException;

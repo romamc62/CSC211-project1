@@ -2,26 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package guzmjo.JanKenPon;
+package com.mycompany.gamehub_project;
 
+import java.io.IOException;
 import java.util.Random;
-
+import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.text.Text;
 
 /**
  *
  * @author guzma
  */
-public class JanKenPonController extends Game {
+public class JanKenPonController extends Game /*implements Scoreboard*/{
     
-    //private fields
+  
     private static PlayerState playerState;
     private static PlayerState compState;
-    
-    //enum GameState will decleare if the player has either won, loss or ended in a draw
-  
+   
     @Override
     public GameState GameLogic() {
             if (playerState == PlayerState.ROCK && compState == PlayerState.PAPER) {return GameState.LOSER;}            
@@ -47,46 +49,69 @@ public class JanKenPonController extends Game {
             alert.showAndWait();        
         } 
     }
+
+    /*@Override
+    public void switchBack(KeyEvent f, String fxml) throws IOException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void setStats() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }*/
     
-    //enum PlayerState will declare what the Player has chosen as their move (e.g. rock, paper, or scissor
+    
     private enum PlayerState {
         ROCK,
         PAPER,
         SCISSOR;
         
         private static final Random random = new Random();
-        
-        //will randomly generate a state which will be what the Computer player will use
+              
         public static PlayerState randomState() {
             PlayerState[] playerStates = values();
             return playerStates[random.nextInt(playerStates.length)];
         }
     }       
     
-    //method gets called when user has clicked on rock.png
+    
     public void selRock() {
         playerState = PlayerState.ROCK;
         compState = PlayerState.randomState();
-
+        
         GameResult();                   
     }
-    
-    //method gets called when user has clicked on paper.png
+        
     public void selPaper() {
         playerState = PlayerState.PAPER;
         compState = PlayerState.randomState();
         
         GameResult(); 
     }
-    
-    //method gets called when user has clicked on scissor.png
+        
     public void selScissor() {
         playerState = PlayerState.SCISSOR;
         compState = PlayerState.randomState();
         
         GameResult();  
-        super.winCounter();
     }
     
    
+    
+    @FXML
+    public void setStats(KeyEvent g) throws IOException{
+        //supposed to set text to textFields but couldn't get it to work
+        //:(
+    }
+    
+    
+    /*@FXML
+    @Override
+    public void switchBack(KeyEvent f) throws IOException {
+        if (f.getCode() == KeyCode.TAB) {
+            Main.setRoot("JanKenPon");
+        }
+    }*/
+   
+    
 }

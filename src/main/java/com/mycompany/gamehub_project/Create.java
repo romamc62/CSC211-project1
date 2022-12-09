@@ -32,10 +32,10 @@ public class Create {
     private TextField Password_Text_Field;
     @FXML
     private Button All_Done_Button;
-
+    User User1 = new User();
     @FXML
     private void switchToLogin() throws IOException {
-        User User1 = new User(Name_Text_Field.getText(), DOB_Text_Field.getText(), UserName_Label.getText(), Password_Text_Field.getText());
+        UserStorage.USI.setUser(User1 = new User(Name_Text_Field.getText(), DOB_Text_Field.getText(), Username_Text_Field.getText(), Password_Text_Field.getText()));
         App.setRoot("Login");
     }
 }

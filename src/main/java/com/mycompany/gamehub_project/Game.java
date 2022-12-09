@@ -1,4 +1,4 @@
-package guzmjo.JanKenPon;
+package com.mycompany.gamehub_project;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,11 +9,10 @@ package guzmjo.JanKenPon;
  *
  * @author guzma
  */
-public abstract class Game {
+public abstract class Game{
     
     private int wins;
     private int losses;
-    private int highScore;
    
     protected enum GameState{
         WINNER,
@@ -36,5 +35,15 @@ public abstract class Game {
         
     }
         
+    public void lossCounter(){
+        if (GameLogic() == GameState.WINNER) {
+            ++this.wins;
+        }
+        
+        else if (GameLogic() == GameState.LOSER) {
+            ++this.losses;
+        }
+        
+    }
  
 }
