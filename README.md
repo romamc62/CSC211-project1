@@ -13,7 +13,7 @@ It's a gamehub that allows user the user to play up to 4 seperate games. (3 Work
 
 The game hub will have a login (Working)
 
-It will have functioning games such as *Tic-Tac-Toe*, *Higher or Lower*, *Rock Paper Scissors*, and *20 Questions* (Tic-Tac-Toe not working)
+It will have functioning games such as *Tic-Tac-Toe*, *Higher or Lower*, *Rock Paper Scissors*, and *20 Questions* (Tic-Tac-Toe not working due to different Netbeans/Java versions; should work with JDK 14 and higher and most recent Netbeans version)
 
 It will also have a leaderboard (Not Implemented)
 ## UML diagram & User Interface sketches:
